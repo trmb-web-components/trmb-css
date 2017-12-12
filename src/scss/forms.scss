@@ -2,12 +2,3 @@
 @include add-foundation-colors;
 @import '../../node_modules/foundation-sites/scss/forms/_forms.scss';
 @include foundation-forms;
-@import '../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/helpers/missing-dependencies';
-@import '../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/helpers/true';
-@import '../../node_modules/foundation-sites/scss/util/_breakpoint.scss';
-@import '../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/remove';
-@import '../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/replace';
-@import '../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/purge';
-@import '../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/to-list';
-@import '../../node_modules/foundation-sites/scss/xy-grid/_xy-grid.scss';
-@include foundation-xy-grid-classes;
