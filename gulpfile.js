@@ -16,7 +16,7 @@ gulp.task('sass-min', function() {
     return gulp.src('./src/scss/*.scss')
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(rename({ extname: ".min.css" }))
-        .pipe(gulp.dest('./build'));
+        .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('sass-wc', function() {
