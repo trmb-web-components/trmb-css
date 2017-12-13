@@ -8,6 +8,7 @@ a.button {
     text-decoration: none;
 }
 
-input[type='button'] {
+input[type='button'],
+input[type='submit'] {
     @include button;
 }

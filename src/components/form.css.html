@@ -739,7 +739,8 @@ a.button:hover, a.button:focus {
 a.button {
   text-decoration: none; }
 
-input[type='button'] {
+input[type='button'],
+input[type='submit'] {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
@@ -755,9 +756,12 @@ input[type='button'] {
   cursor: pointer;
   background-color: #1779ba;
   color: #fefefe; }
-  [data-whatinput='mouse'] input[type='button'] {
+  [data-whatinput='mouse'] input[type='button'], [data-whatinput='mouse']
+  input[type='submit'] {
     outline: 0; }
-  input[type='button']:hover, input[type='button']:focus {
+  input[type='button']:hover, input[type='button']:focus,
+  input[type='submit']:hover,
+  input[type='submit']:focus {
     background-color: #14679e;
     color: #fefefe; }
 </style></template><dom-module>
