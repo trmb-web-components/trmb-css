@@ -735,3 +735,6 @@ a.button:hover, a.button:focus {
 
 a.button:hover, a.button:focus {
   text-decoration: none; }
+
+a.button {
+  text-decoration: none; }

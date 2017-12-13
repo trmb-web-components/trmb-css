@@ -4,3 +4,6 @@
 @include foundation-forms;
 @import 'button';
 @include trmb-foundation-button;
+a.button {
+    text-decoration: none;
+}
