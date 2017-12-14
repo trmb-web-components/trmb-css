@@ -1,0 +1,7 @@
+@import 'global';
+@include add-foundation-colors;
+@import '../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/helpers/missing-dependencies';
+@import '../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/helpers/true';
+@import '../../node_modules/foundation-sites/scss/util/_breakpoint.scss';
+@import '../../node_modules/foundation-sites/scss/components/_pagination.scss';
+@include foundation-pagination;
