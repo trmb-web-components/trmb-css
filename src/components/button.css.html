@@ -307,4 +307,33 @@ textarea {
 
 a.button:hover, a.button:focus {
   text-decoration: none; }
+
+a.button {
+  text-decoration: none; }
+
+input[type='button'],
+input[type='submit'] {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  font-family: inherit;
+  padding: 0.85em 1em;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #1779ba;
+  color: #fefefe; }
+  [data-whatinput='mouse'] input[type='button'], [data-whatinput='mouse']
+  input[type='submit'] {
+    outline: 0; }
+  input[type='button']:hover, input[type='button']:focus,
+  input[type='submit']:hover,
+  input[type='submit']:focus {
+    background-color: #14679e;
+    color: #fefefe; }
 </style></template><dom-module>

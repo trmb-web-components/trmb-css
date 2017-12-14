@@ -2,6 +2,11 @@
 @include add-foundation-colors;
 @import '../../node_modules/foundation-sites/scss/components/_button.scss';
 @include foundation-button;
-@mixin trmb-foundation-button {
-    @include foundation-button;
+a.button {
+    text-decoration: none;
+}
+
+input[type='button'],
+input[type='submit'] {
+    @include button;
 }
