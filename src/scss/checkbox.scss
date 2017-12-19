@@ -1,0 +1,85 @@
+@import 'global';
+@include add-foundation-colors;
+//@import '../../node_modules/foundation-sites/scss/forms/_checkbox.scss';
+//@include foundation-form-checkbox;
+
+$checkbox-size:24px;
+@mixin check-status($normal-image, $hover-image) {
+    display: inline-block;
+    padding: 0;     
+    cursor: pointer;
+    &:before {
+        content:" ";
+        position:absolute;
+        left:0;
+        top:0;
+        height: $checkbox-size;
+        width: $checkbox-size;
+        display: inline-block;    
+        background: url($normal-image) no-repeat;   
+    }
+    &:hover {
+        &:before{       
+            background: url($hover-image) no-repeat;        
+        }
+    }
+    
+}
+
+@mixin custom-checkbox {
+  position:relative;
+  height: $checkbox-size;
+  line-height: $checkbox-size;
+   input[type=checkbox] {
+    opacity:0;
+    margin:0;
+    position:relative;
+    z-index: 2;
+    width: $checkbox-size;
+    height: $checkbox-size;
+    cursor: pointer;
+   /* & + label, &:checked + label, &:indeterminate + label {
+        @include check-status("../images/checkbox/checkbox-unchecked-active.svg", "../images/checkbox/checkbox-unchecked-hover.svg");
+    }*/
+    & + label{
+        @include check-status("../images/checkbox/checkbox-unchecked-active.svg", "../images/checkbox/checkbox-unchecked-hover.svg");
+        /*&:before{
+            background: url("../images/checkbox/checkbox-unchecked-active.svg") no-repeat;
+        }
+        &:hover{
+            &:before{       
+                background: url("../images/checkbox/checkbox-unchecked-hover.svg") no-repeat;        
+            }
+        }*/
+    }
+    &:checked + label{
+        @include check-status("../images/checkbox/checkbox-checked.svg", "../images/checkbox/checkbox-checked-hover.svg");
+        /*&:before{
+            background: url("../images/checkbox/checkbox-checked.svg") no-repeat;
+        }
+        &:hover{
+            &:before{       
+                background: url("../images/checkbox/checkbox-checked-hover.svg") no-repeat;        
+            }
+        }*/
+    }
+    &:indeterminate + label{
+        @include check-status("../images/checkbox/checkbox-indeterminate-active.svg", "../images/checkbox/checkbox-indeterminate-hover.svg");
+        /*&:before{
+            background: url("../images/checkbox/checkbox-indeterminate-active.svg") no-repeat;
+        }
+        &:hover{
+            &:before{       
+                background: url("../images/checkbox/checkbox-indeterminate-hover.svg") no-repeat;                 
+            }
+        }*/
+    }
+  }
+  label{
+      font-weight: normal;
+  }
+}
+
+.custom-checkbox{
+    @include custom-checkbox;
+}

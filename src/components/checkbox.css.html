@@ -1,0 +1,87 @@
+<dom-module id="checkbox-css"><template><style>.custom-checkbox {
+  position: relative;
+  height: 24px;
+  line-height: 24px; }
+  .custom-checkbox input[type=checkbox] {
+    opacity: 0;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    /* & + label, &:checked + label, &:indeterminate + label {
+        @include check-status("../images/checkbox/checkbox-unchecked-active.svg", "../images/checkbox/checkbox-unchecked-hover.svg");
+    }*/ }
+    .custom-checkbox input[type=checkbox] + label {
+      display: inline-block;
+      padding: 0;
+      cursor: pointer;
+      /*&:before{
+            background: url("../images/checkbox/checkbox-unchecked-active.svg") no-repeat;
+        }
+        &:hover{
+            &:before{       
+                background: url("../images/checkbox/checkbox-unchecked-hover.svg") no-repeat;        
+            }
+        }*/ }
+      .custom-checkbox input[type=checkbox] + label:before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        background: url("../images/checkbox/checkbox-unchecked-active.svg") no-repeat; }
+      .custom-checkbox input[type=checkbox] + label:hover:before {
+        background: url("../images/checkbox/checkbox-unchecked-hover.svg") no-repeat; }
+    .custom-checkbox input[type=checkbox]:checked + label {
+      display: inline-block;
+      padding: 0;
+      cursor: pointer;
+      /*&:before{
+            background: url("../images/checkbox/checkbox-checked.svg") no-repeat;
+        }
+        &:hover{
+            &:before{       
+                background: url("../images/checkbox/checkbox-checked-hover.svg") no-repeat;        
+            }
+        }*/ }
+      .custom-checkbox input[type=checkbox]:checked + label:before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        background: url("../images/checkbox/checkbox-checked.svg") no-repeat; }
+      .custom-checkbox input[type=checkbox]:checked + label:hover:before {
+        background: url("../images/checkbox/checkbox-checked-hover.svg") no-repeat; }
+    .custom-checkbox input[type=checkbox]:indeterminate + label {
+      display: inline-block;
+      padding: 0;
+      cursor: pointer;
+      /*&:before{
+            background: url("../images/checkbox/checkbox-indeterminate-active.svg") no-repeat;
+        }
+        &:hover{
+            &:before{       
+                background: url("../images/checkbox/checkbox-indeterminate-hover.svg") no-repeat;                 
+            }
+        }*/ }
+      .custom-checkbox input[type=checkbox]:indeterminate + label:before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        background: url("../images/checkbox/checkbox-indeterminate-active.svg") no-repeat; }
+      .custom-checkbox input[type=checkbox]:indeterminate + label:hover:before {
+        background: url("../images/checkbox/checkbox-indeterminate-hover.svg") no-repeat; }
+  .custom-checkbox label {
+    font-weight: normal; }
+</style></template><dom-module>
