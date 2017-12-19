@@ -41,9 +41,12 @@ gulp.task('sass-wc-min', function() {
         .pipe(inject.append('</style></template><dom-module>'))
         .pipe(gulp.dest('./dist/components'));
 });
-
+gulp.task('copy-images', function() {
+    return gulp.src('./src/images/**')
+        .pipe(gulp.dest('./dist/images/'));
+});
 gulp.task('sass:watch', function() {
     gulp.watch('./src/scss/*.scss', ['sass']);
 });
 
-gulp.task('run:sass', ['sass', 'sass-min', 'sass-wc', 'sass-wc-min']);
+gulp.task('run:sass', ['sass', 'sass-min', 'sass-wc', 'sass-wc-min', 'copy-images']);
