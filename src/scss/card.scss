@@ -18,19 +18,8 @@
     margin: 0;
 }
 
-.profile-picture {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-.profile-picture img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-}
-
 .card-section {
     padding: 15px 30px;
 }
+
+@import 'profilex-image';
