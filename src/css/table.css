@@ -27,7 +27,16 @@
   width: 100px;
   border-bottom: 1px solid #e2e2e7;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-weight: normal; }
 
-.table .th {
+.table .th.td {
   font-weight: 600; }
+
+.truncate-auto {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.width0 {
+  max-width: 50px; }
