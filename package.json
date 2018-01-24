@@ -1,6 +1,6 @@
 {
   "name": "trmb-css",
-  "version": "1.0.0",
+  "version": "0.0.12",
   "main": "index.js",
   "repository": "ssh://git@bitbucket.trimble.tools/twc/trmb-css.git",
   "author": "<balasuresh_varadharajan@trimble.com>",
