@@ -2,7 +2,7 @@
   "name": "trmb-css",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/trmbl-web-components/trmb-css.git",
+  "repository": "ssh://git@bitbucket.trimble.tools/twc/trmb-css.git",
   "author": "<balasuresh_varadharajan@trimble.com>",
   "license": "MIT",
   "dependencies": {
